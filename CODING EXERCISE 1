@@ -1,0 +1,67 @@
+package exercise1;
+
+public class RectangleComputation {
+
+	/*
+
+	Print the area and perimeter of a rectangle, given its length and width (in doubles).
+	Use 4 double variables called length, width, area and perimeter.
+	*/
+	public static void main(String[] args) {
+		
+		//Declare 4 double variables called length, width, area and perimeter.
+		double length,width,area,perimeter;
+		
+		//Assign length and width (in double)
+		length = 6.0;
+		width  = 2.1;
+		
+		//Compute the area and perimeter
+		area = length*width;
+		perimeter = 2*length+2*width;
+		
+		//print area and perimeter
+		System.out.printf("The area of rectangle is : %.2f" , area);
+		System.out.printf("\nThe perimeter of rectangle is : %.2f" , perimeter) ;
+
+	}
+
+}
+
+
+-----------------------------------------------------------
+
+package exercise1;
+
+public class CylinderComputation {
+	/*
+	 * Print the surface area, base area, and volume of a cylinder, given its radius and height (in doubles). 
+	 * You should use 5 double variables called radius, height, surfaceArea, baseArea and volume. 
+	 * Take note that space (blank) is not allowed in variable names.
+	 */
+	
+	public static void main(String[] args) {
+		//declare 5 double variables called radius, height, surfaceArea, baseArea and volume.
+		double radius,height,surfaceArea,baseArea,volume;
+		
+		//assign radius and height
+		radius = 10.0;
+		height = 20.0;
+		
+		//// Declare a double to hold PI.
+		// "final" used to specify that its value cannot be changed
+		final double PI = 3.14159265;
+		
+		//compute surface area, base area, and volume of a cylinder
+		surfaceArea = 2*PI*radius*height+2*PI*radius*radius;
+		baseArea    = PI*radius*radius;
+		volume      = PI*radius*radius*height;
+		
+		//print answer
+		System.out.printf("The surface area of the cylinder is : %.2f "  ,surfaceArea);
+		System.out.printf("\nThe base area of the cylinder is : %.2f "  ,baseArea);
+		System.out.printf("The volume of the cylinder is : %.2f "  ,volume);
+		
+	}
+
+}
